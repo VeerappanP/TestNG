@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.maven.TestNG.Facebook">
+      <class name="com.maven.TestNG.AdactinLogin">
         <methods>
-          <include name="home"/>
+          <include name="adactinLogin" invocation-numbers="4"/>
         </methods>
-      </class> <!-- com.maven.TestNG.Facebook -->
+      </class> <!-- com.maven.TestNG.AdactinLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
