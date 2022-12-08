@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.maven.TestNG.Priority">
+      <class name="com.shadow.Shadow">
         <methods>
-          <include name="deleteFromCart"/>
-          <include name="addToCart"/>
+          <include name="shadowMethode"/>
         </methods>
-      </class> <!-- com.maven.TestNG.Priority -->
+      </class> <!-- com.shadow.Shadow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
