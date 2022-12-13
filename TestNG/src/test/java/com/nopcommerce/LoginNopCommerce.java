@@ -1,19 +1,9 @@
 package com.nopcommerce;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class LoginNopCommerce {
-
-	public RemoteWebDriver driver;
-
-	public LoginNopCommerce(RemoteWebDriver driver1) {
-		this.driver = driver1;
-		PageFactory.initElements(driver, this);
-
-	}
+public class LoginNopCommerce extends HeadNopCommerce {
 
 	public WebElement getUserName() {
 		return userName;

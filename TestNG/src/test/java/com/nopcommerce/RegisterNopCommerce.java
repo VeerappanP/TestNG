@@ -1,95 +1,92 @@
 package com.nopcommerce;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class RegisterNopCommerce {
+public class RegisterNopCommerce extends PrintNopCommerce {
 
-	public RemoteWebDriver driver;
-
-	public RegisterNopCommerce(RemoteWebDriver driver1) {
-		this.driver = driver1;
-		PageFactory.initElements(driver, this);
-
+	public WebElement getMaleRadioButtonRM() {
+		return maleRadioButtonRM;
 	}
 
-	public WebElement getMale() {
-		return male;
+	public WebElement getFirstNameRM() {
+		return firstNameRM;
 	}
 
-	public WebElement getFirstName() {
-		return firstName;
+	public WebElement getLastNameRM() {
+		return lastNameRM;
 	}
 
-	public WebElement getLastName() {
-		return lastName;
+	public WebElement getDateOfBirthDayRM() {
+		return dateOfBirthDayRM;
 	}
 
-	public WebElement getDateOfBirthDay() {
-		return dateOfBirthDay;
+	public WebElement getDateOfBirthMonthRM() {
+		return dateOfBirthMonthRM;
 	}
 
-	public WebElement getDateOfBirthMonth() {
-		return dateOfBirthMonth;
+	public WebElement getDateOfBirthYearRM() {
+		return dateOfBirthYearRM;
 	}
 
-	public WebElement getDateOfBirthYear() {
-		return dateOfBirthYear;
+	public WebElement getEmailRM() {
+		return emailRM;
 	}
 
-	public WebElement getEmail() {
-		return email;
+	public WebElement getCompanyRM() {
+		return companyRM;
 	}
 
-	public WebElement getCompany() {
-		return company;
+	public WebElement getPasswordRegisterRM() {
+		return passwordRegisterRM;
 	}
 
-	public WebElement getPasswordRegister() {
-		return passwordRegister;
+	public WebElement getConfirmPasswordRM() {
+		return confirmPasswordRM;
 	}
 
-	public WebElement getConfirmPassword() {
-		return confirmPassword;
+	public WebElement getRegisterButtonRM() {
+		return registerButtonRM;
 	}
 
-	public WebElement getContinueButtonAfterRegistration() {
-		return continueButtonAfterRegistration;
+	public WebElement getContinueButtonAfterRegistrationRM() {
+		return continueButtonAfterRegistrationRM;
 	}
 
 	@FindBy(xpath = "//input[@id='gender-male']")
-	private WebElement male;
+	private WebElement maleRadioButtonRM;
 
 	@FindBy(xpath = "//input[@id='FirstName']")
-	private WebElement firstName;
+	private WebElement firstNameRM;
 
 	@FindBy(xpath = "//input[@id='LastName']")
-	private WebElement lastName;
+	private WebElement lastNameRM;
 
 	@FindBy(xpath = "//select[@name='DateOfBirthDay']")
-	private WebElement dateOfBirthDay;
+	private WebElement dateOfBirthDayRM;
 
 	@FindBy(xpath = "//select[@name='DateOfBirthMonth']")
-	private WebElement dateOfBirthMonth;
+	private WebElement dateOfBirthMonthRM;
 
 	@FindBy(xpath = "//select[@name='DateOfBirthYear']")
-	private WebElement dateOfBirthYear;
+	private WebElement dateOfBirthYearRM;
 
 	@FindBy(xpath = "//input[@id='Email']")
-	private WebElement email;
+	private WebElement emailRM;
 
 	@FindBy(xpath = "//input[@id='Company']")
-	private WebElement company;
+	private WebElement companyRM;
 
 	@FindBy(xpath = "//input[@id='Password']")
-	private WebElement passwordRegister;
+	private WebElement passwordRegisterRM;
 
 	@FindBy(xpath = "//input[@id='ConfirmPassword']")
-	private WebElement confirmPassword;
+	private WebElement confirmPasswordRM;
+
+	@FindBy(xpath = "//button[.='Register']")
+	private WebElement registerButtonRM;
 
 	@FindBy(xpath = "//a[contains(@class,'continue-button')]")
-	private WebElement continueButtonAfterRegistration;
+	private WebElement continueButtonAfterRegistrationRM;
 
 }

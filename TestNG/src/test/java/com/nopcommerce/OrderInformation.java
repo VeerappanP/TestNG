@@ -1,13 +1,9 @@
 package com.nopcommerce;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class OrderInformation {
-
-	public RemoteWebDriver driver;
+public class OrderInformation extends LoginNopCommerce {
 
 	public WebElement getPrint() {
 		return print;
@@ -31,12 +27,6 @@ public class OrderInformation {
 
 	public void setReorder(WebElement reorder) {
 		this.reorder = reorder;
-	}
-
-	public OrderInformation(RemoteWebDriver driver1) {
-		this.driver = driver1;
-		PageFactory.initElements(driver, this);
-
 	}
 
 	@FindBy(xpath = "//a[.='Print']")

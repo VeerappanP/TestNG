@@ -1,20 +1,12 @@
 package com.nopcommerce;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class BuildYourOwnComputerNopCommerce {
-    public RemoteWebDriver driver;
-	
-	public BuildYourOwnComputerNopCommerce(RemoteWebDriver driver1) {
-		this.driver=driver1;
-	       PageFactory.initElements(driver, this);
-		
-	}
-	
-	
+import cucumber.BaseClass;
+
+public class BuildYourOwnComputerNopCommerce extends BaseClass {
+
 	public WebElement getProcessor() {
 		return processor;
 	}
@@ -58,7 +50,6 @@ public class BuildYourOwnComputerNopCommerce {
 	public WebElement getAddToCart() {
 		return addToCart;
 	}
-
 
 	@FindBy(xpath = "//select[contains(@name,'product_attribute_1')]")
 	private WebElement processor;
